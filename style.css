@@ -419,4 +419,119 @@ footer {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .preview-body {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* Dashboard Preview */
+.preview-dashboard {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.preview-header {
+  background: #161b22;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid #30363d;
+}
+
+.preview-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3fb950;
+}
+
+.preview-dot:nth-child(2) {
+  background: #d29922;
+}
+
+.preview-dot:nth-child(3) {
+  background: #f85149;
+}
+
+.preview-title {
+  color: #8b949e;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.preview-body {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.preview-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.preview-card:hover {
+  border-color: #1f6feb;
+  transform: translateY(-2px);
+}
+
+.preview-card.card-warn:hover {
+  border-color: #d29922;
+}
+
+.preview-card.card-sale:hover {
+  border-color: #3fb950;
+}
+
+.preview-card.card-info:hover {
+  border-color: #1f6feb;
+}
+
+.preview-card-icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 111, 235, 0.1);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.card-warn .preview-card-icon {
+  background: rgba(210, 153, 34, 0.1);
+}
+
+.card-sale .preview-card-icon {
+  background: rgba(63, 185, 80, 0.1);
+}
+
+.card-info .preview-card-icon {
+  background: rgba(31, 111, 235, 0.1);
+}
+
+.preview-card-value {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e6edf3;
+  line-height: 1.2;
+}
+
+.preview-card-label {
+  font-size: 11px;
+  color: #8b949e;
 }
