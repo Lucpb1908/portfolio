@@ -160,6 +160,86 @@
           <span class="tech">PDFKit</span>
           <span class="tech">Chart.js</span>
         </div>
+        <div class="preview-cashly">
+          <div class="cashly-sidebar">
+            <div class="cashly-logo">
+              <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#cGrad)"/>
+                <path d="M10 22V14h3v8h-3Zm4.5 0v-12h3v12h-3Zm4.5 0v-6h3v6h-3Z" fill="#fff"/>
+                <defs><linearGradient id="cGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+              </svg>
+              <span>Cashly</span>
+            </div>
+            <div class="cashly-nav">
+              <div class="cashly-nav-item active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+              <div class="cashly-nav-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>Receitas</div>
+              <div class="cashly-nav-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg>Despesas</div>
+              <div class="cashly-nav-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>Contas</div>
+              <div class="cashly-nav-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Relatorios</div>
+              <div class="cashly-nav-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Fluxo de Caixa</div>
+            </div>
+          </div>
+          <div class="cashly-main">
+            <div class="cashly-topbar">
+              <div>
+                <div class="cashly-title">Dashboard</div>
+                <div class="cashly-sub">Resumo financeiro do periodo</div>
+              </div>
+              <div class="cashly-topbar-right">
+                <div class="cashly-search">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Pesquisar transacoes...</span>
+                </div>
+                <div class="cashly-btn">Filtros</div>
+              </div>
+            </div>
+            <div class="cashly-cards">
+              <div class="cashly-card">
+                <div class="cashly-card-label">Receitas (mes)</div>
+                <div class="cashly-card-value" style="color:#10B981">R$ 42.580</div>
+                <div class="cashly-card-change"><span class="up">+12,5%</span> vs mes passado</div>
+              </div>
+              <div class="cashly-card">
+                <div class="cashly-card-label">Despesas (mes)</div>
+                <div class="cashly-card-value" style="color:#EF4444">R$ 28.340</div>
+                <div class="cashly-card-change"><span class="down">+8,3%</span> vs mes passado</div>
+              </div>
+              <div class="cashly-card">
+                <div class="cashly-card-label">Saldo Atual</div>
+                <div class="cashly-card-value" style="color:#10B981">R$ 14.240</div>
+                <div class="cashly-card-change">Disponivel em conta</div>
+              </div>
+              <div class="cashly-card">
+                <div class="cashly-card-label">A Receber</div>
+                <div class="cashly-card-value" style="color:#8B5CF6">R$ 6.800</div>
+                <div class="cashly-card-change">3 contas pendentes</div>
+              </div>
+            </div>
+            <div class="cashly-charts">
+              <div class="cashly-chart-card" style="flex:2">
+                <div class="cashly-chart-title">Receitas & Despesas <span>ultimos 7 meses</span></div>
+                <div class="cashly-chart-placeholder line">
+                  <div class="bar" style="height:30%"></div>
+                  <div class="bar" style="height:50%"></div>
+                  <div class="bar" style="height:40%"></div>
+                  <div class="bar" style="height:70%"></div>
+                  <div class="bar" style="height:55%"></div>
+                  <div class="bar" style="height:80%"></div>
+                  <div class="bar" style="height:65%"></div>
+                </div>
+              </div>
+              <div class="cashly-chart-card" style="flex:1">
+                <div class="cashly-chart-title">Despesas por Categoria</div>
+                <div class="cashly-pie-legend">
+                  <div class="pie-item"><span class="pie-dot" style="background:#EF4444"></span>Operacionais <span class="pct">42%</span></div>
+                  <div class="pie-item"><span class="pie-dot" style="background:#3B82F6"></span>Folha <span class="pct">28%</span></div>
+                  <div class="pie-item"><span class="pie-dot" style="background:#10B981"></span>Infraestrutura <span class="pct">18%</span></div>
+                  <div class="pie-item"><span class="pie-dot" style="background:#EAB308"></span>Marketing <span class="pct">12%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
