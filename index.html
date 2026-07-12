@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+  <meta name="description" content="Portfólio de AORA — Desenvolvedor Full Stack especializado em aplicações desktop com Electron, SQLite e JavaScript.">
+  <meta property="og:title" content="AORA | Full Stack Developer">
+  <meta property="og:description" content="Portfólio de AORA — Desenvolvedor Full Stack especializado em aplicações desktop com Electron, SQLite e JavaScript.">
+  <meta property="og:type" content="website">
+  <title>AORA | Full Stack Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f6feb'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='800' fill='white' text-anchor='middle' font-family='system-ui'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,16 +61,16 @@
         </div>
         <div class="about-highlights">
           <div class="highlight">
-            <span class="highlight-num">+5</span>
+            <span class="highlight-num">+2</span>
             <span class="highlight-label">Projetos</span>
           </div>
           <div class="highlight">
-            <span class="highlight-num">+2</span>
+            <span class="highlight-num">+10</span>
             <span class="highlight-label">Tecnologias</span>
           </div>
           <div class="highlight">
-            <span class="highlight-num">+1</span>
-            <span class="highlight-label">Ano Codando</span>
+            <span class="highlight-num">+2</span>
+            <span class="highlight-label">Anos Codando</span>
           </div>
         </div>
       </div>
@@ -75,6 +80,16 @@
   <section id="projects">
     <div class="container">
       <h2 class="section-title">Projetos</h2>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="Electron">Electron</button>
+        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+        <button class="filter-btn" data-filter="SQLite">SQLite</button>
+        <button class="filter-btn" data-filter="PDFKit">PDFKit</button>
+        <button class="filter-btn" data-filter="Chart.js">Chart.js</button>
+        <button class="filter-btn" data-filter="Inno Setup">Inno Setup</button>
+      </div>
 
       <div class="projects-grid">
 
@@ -93,12 +108,15 @@
             registro de entradas/saidas, relatorios em PDF, pagina financeira
             com movimentacoes do dia e instalador Inno Setup.
           </p>
-          <div class="project-techs">
-            <span class="tech">Electron</span>
-            <span class="tech">JavaScript</span>
-            <span class="tech">SQLite</span>
-            <span class="tech">PDFKit</span>
-            <span class="tech">Inno Setup</span>
+          <div class="project-techs" data-project="stockflow">
+            <span class="tech" data-tech="Electron">Electron</span>
+            <span class="tech" data-tech="JavaScript">JavaScript</span>
+            <span class="tech" data-tech="SQLite">SQLite</span>
+            <span class="tech" data-tech="PDFKit">PDFKit</span>
+            <span class="tech" data-tech="Inno Setup">Inno Setup</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="stockflow">Ver Detalhes</button>
           </div>
           <div class="sf-preview">
             <div class="sf-sidebar">
@@ -166,12 +184,15 @@
             receitas, despesas e contas a receber/pagar, fluxo de caixa interativo, emissao
             de recibos em PDF e exportacao de dados para Excel.
           </p>
-          <div class="project-techs">
-            <span class="tech">Electron</span>
-            <span class="tech">JavaScript</span>
-            <span class="tech">SQLite</span>
-            <span class="tech">PDFKit</span>
-            <span class="tech">Chart.js</span>
+          <div class="project-techs" data-project="cashly">
+            <span class="tech" data-tech="Electron">Electron</span>
+            <span class="tech" data-tech="JavaScript">JavaScript</span>
+            <span class="tech" data-tech="SQLite">SQLite</span>
+            <span class="tech" data-tech="PDFKit">PDFKit</span>
+            <span class="tech" data-tech="Chart.js">Chart.js</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="cashly">Ver Detalhes</button>
           </div>
           <div class="preview-cashly">
             <div class="cashly-sidebar">
@@ -298,6 +319,16 @@
   <footer>
     <p>&copy; 2026 AORA. Feito com &#x2764;</p>
   </footer>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
